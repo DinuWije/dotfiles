@@ -9,10 +9,11 @@ alias ~="cd ~" # `cd` is probably faster to type though
 alias -- -="cd -"
 
 # Shortcuts
-alias d="cd ~/Documents/Dropbox"
+alias d="cd ~/Documents"
 alias dl="cd ~/Downloads"
 alias dt="cd ~/Desktop"
 alias p="cd ~/Projects"
+alias s="cd ~/snaptravel"
 
 #git aliases
 alias g="git"
@@ -26,6 +27,7 @@ alias gcom="git commit -m"
 alias gch="git checkout"
 alias gpl="git pull"
 alias gps="git push"
+alias gdh="git diff head"
 
 alias st='python /Users/nimwijetunga/snaptravel/devops/st.py'
 
@@ -160,3 +162,5 @@ alias reload="exec ${SHELL} -l"
 
 # Print each PATH entry on a separate line
 alias path='echo -e ${PATH//:/\\n}'
+
+alias src="source ~/.aliases && source ~/.bash_profile"
