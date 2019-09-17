@@ -28,6 +28,8 @@ alias gch="git checkout"
 alias gpl="git pull"
 alias gps="git push"
 alias gdh="git diff head"
+alias ssha='ssh -i "default.pem" ec2-user@ec2-52-5-43-240.compute-1.amazonaws.com'
+alias gr="git reset"
 
 alias st='python /Users/nimwijetunga/snaptravel/devops/st.py'
 
