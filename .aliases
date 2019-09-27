@@ -28,10 +28,13 @@ alias gch="git checkout"
 alias gpl="git pull"
 alias gps="git push"
 alias gdh="git diff head"
-alias ssha='ssh -i "default.pem" ec2-user@ec2-52-5-43-240.compute-1.amazonaws.com'
+alias ssha='ssh -i ~/snaptravel/default.pem ec2-user@ec2-52-5-43-240.compute-1.amazonaws.com'
 alias gr="git reset"
 
 alias st='python /Users/nimwijetunga/snaptravel/devops/st.py'
+
+#docker aliases
+alias dps="docker ps"
 
 # Detect which `ls` flavor is in use
 if ls --color > /dev/null 2>&1; then # GNU `ls`
