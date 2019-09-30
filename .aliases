@@ -168,4 +168,4 @@ alias reload="exec ${SHELL} -l"
 # Print each PATH entry on a separate line
 alias path='echo -e ${PATH//:/\\n}'
 
-alias src="source ~/.aliases && source ~/.functions && source ~/.bash_profile"
+alias src="source ~/.extra && source ~/.aliases && source ~/.functions && source ~/.bash_profile"

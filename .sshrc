@@ -1,0 +1,43 @@
+#!/usr/bin/env bash
+
+# Easier navigation: .., ..., ...., ....., ~ and -
+alias ..="cd .."
+alias ...="cd ../.."
+alias ....="cd ../../.."
+alias .....="cd ../../../.."
+alias ~="cd ~" # `cd` is probably faster to type though
+alias -- -="cd -"
+
+# Shortcuts
+alias d="cd ~/Documents"
+alias dl="cd ~/Downloads"
+alias dt="cd ~/Desktop"
+alias p="cd ~/Projects"
+alias s="cd ~/snaptravel"
+
+#git aliases
+alias g="git"
+alias gb="git branch"
+alias gs="git status"
+alias gd="git diff"
+alias ga="git add"
+alias gl="git log"
+alias gm="git merge"
+alias gcom="git commit -m"
+alias gch="git checkout"
+alias gpl="git pull"
+alias gps="git push"
+alias gdh="git diff head"
+alias ssha='ssh -i ~/snaptravel/default.pem ec2-user@ec2-52-5-43-240.compute-1.amazonaws.com'
+alias gr="git reset"
+
+alias st='python /Users/nimwijetunga/snaptravel/devops/st.py'
+
+#docker aliases
+alias dps="docker ps"
+
+#docker functions
+dexec() {
+    docker exec -it "$1" /bin/bash
+    echo "$1"
+}
