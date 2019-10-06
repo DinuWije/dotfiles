@@ -175,3 +175,11 @@ dexec() {
     docker exec -it "$1" /bin/bash
     echo "$1"
 }
+
+#dbt functions
+function dbt_run_chg() {
+    children=$1
+    models=$(git diff --name-only | grep '\.sql$' | awk -F '/' '{ print $NF }' | sed "s/\.sql$/${children}/g" | tr '\n' ' ')
+    echo "Running models: ${models}"
+    dbt run --models $models
+}
