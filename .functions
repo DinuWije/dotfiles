@@ -176,6 +176,11 @@ dexec() {
     echo "$1"
 }
 
+dlogs(){
+	docker logs -f --tail 10 "$1"
+	echo "$1"
+}
+
 #dbt functions
 function dbt_run_chg() {
     children=$1
