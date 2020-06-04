@@ -177,7 +177,7 @@ dexec() {
 }
 
 dlogs(){
-	docker logs -f --tail 10 "$1"
+	docker logs -f "$1"
 	echo "$1"
 }
 
