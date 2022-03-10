@@ -22,6 +22,9 @@ alias clr="clear"
 alias npmu="npm uninstall"
 alias npmi="npm install"
 alias rnm="rm -rf node_modules/ && npm install"
+alias docr="docker-compose run"
+alias docu="docker-compose up"
+alias dspace="docker system df"
 
 # UW SSH
 alias sshuw="ssh -Y dwijetun@linux.student.cs.uwaterloo.ca"
@@ -42,11 +45,18 @@ scp $1 dwijetun@linux.student.cs.uwaterloo.ca:~/cs241
 alias g="git"
 alias gb="git branch"
 alias gs="git status"
+alias gss="git stash save -u"
+alias gsl="git stash list"
+gsp(){
+git stash pop stash@{$1}
+}
+alias gsf="git stash"
 alias gd="git diff"
 alias ga="git add"
 alias gl="git log"
 alias gm="git merge"
 alias gcom="git commit -m"
+alias gac="git add . && git commit -m"
 alias gch="git checkout"
 alias gpl="git pull"
 alias gps="git push"
@@ -54,7 +64,7 @@ alias gdh="git diff head"
 alias gr="git reset"
 alias grb="git rebase"
 alias gpsfls="git push --force-with-lease"
-alias gpsu="src && git push --set-upstream origin `git branch --show-current`"
+alias gpsu="gps -u origin head"
 alias glog="git log"
 alias gcomam="git commit --amend --no-edit"
 alias gcl="git clone"
@@ -66,7 +76,12 @@ alias dps="docker ps"
 alias dtags="docker ps -aq"
 alias dstop="docker stop"
 alias drm="docker rm"
-
+alias dcu="docker-compose up"
+alias dn="docker network"
+#Coinsquare Aliases
+alias cs="cd ~/coinsquarex"
+alias trades="cd ~/coinsquarex/trades-service"
+alias awslogin="saml2aws login"
 #Cloudspark aliases
 alias cloud="cd ~/Documents/Cloudspark"
 alias csamp="cd ~/Documents/Cloudspark/Samples"
@@ -80,6 +95,8 @@ ngrok http -subdomain=$1 $2
 npmr(){
 npm uninstall $1 && npm install $1
 }
+
+
 
 # Detect which `ls` flavor is in use
 if ls --color > /dev/null 2>&1; then # GNU `ls`
