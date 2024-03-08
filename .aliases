@@ -78,25 +78,6 @@ alias dstop="docker stop"
 alias drm="docker rm"
 alias dcu="docker-compose up"
 alias dn="docker network"
-#Coinsquare Aliases
-alias cs="cd ~/coinsquarex"
-alias trades="cd ~/coinsquarex/trades-service"
-alias awslogin="saml2aws login"
-#Cloudspark aliases
-alias cloud="cd ~/Documents/Cloudspark"
-alias csamp="cd ~/Documents/Cloudspark/Samples"
-alias cm="cd ~/Documents/Cloudspark/Microservices"
-alias clint="tslint --fix -p '.'"
-alias npmb="npm run build"
-alias npms="npm run start"
-ncon(){
-ngrok http -subdomain=$1 $2
-}
-npmr(){
-npm uninstall $1 && npm install $1
-}
-
-
 
 # Detect which `ls` flavor is in use
 if ls --color > /dev/null 2>&1; then # GNU `ls`
