@@ -22,10 +22,15 @@ set -- -f; source bootstrap.sh
 
 To change the color scheme:
 ```
-Launch iTerm 2. Get the latest version at iterm2.com
-Type CMD+i
-Navigate to Colors tab
-Disable light mode and only have dark mode
+Open iTerm2.
+Click on iTerm2 in the menu bar and then select Preferences.
+In the Preferences/Settings window, click on the Profiles tab.
+In the Profiles panel, select your default profile (usually it's named Default) from the list on the left.
+Click on the Colors tab in the right panel.
+Click on the Color Presets... drop-down at the bottom right corner of the window.
+Choose the dark theme you want to use (for example, Solarized Dark or Tango Dark).
+Close the Preferences window. iTerm2 will ask if you want to save the changes, click on Save.
+
 ```
 
 ### Git-free install
