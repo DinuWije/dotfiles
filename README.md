@@ -6,9 +6,7 @@
 
 You can clone the repository wherever you want. (I like to keep it in `~/Projects/dotfiles`, with `~/dotfiles` as a symlink.) The bootstrapper script will pull in the latest version and copy the files to your home folder.
 
-```bash
-git clone https://github.com/mathiasbynens/dotfiles.git && cd dotfiles && source bootstrap.sh
-```
+Clone the project
 
 To update, `cd` into your local `dotfiles` repository and then:
 
@@ -20,6 +18,14 @@ Alternatively, to update while avoiding the confirmation prompt:
 
 ```bash
 set -- -f; source bootstrap.sh
+```
+
+To change the color scheme:
+```
+Launch iTerm 2. Get the latest version at iterm2.com
+Type CMD+i
+Navigate to Colors tab
+Disable light mode and only have dark mode
 ```
 
 ### Git-free install
